@@ -3,9 +3,7 @@ const express = require("express");
 const app = express();
 
 app.get("/msg", (req, res) => {
-  res.json({
-    message: "Student API Working"
-  });
+  throw new Error("Server crash!");
 });
 app.listen(3000, () => {
   console.log("Server running");
